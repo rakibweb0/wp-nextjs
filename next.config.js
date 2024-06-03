@@ -8,4 +8,11 @@ export default withFaust({
       xssProtection: false
     }) }];
   },
+
+  images: {
+    dangerouslyAllowSVG: true,
+    remotePatterns: [
+      { hostname: "institutkristal.ca" },
+    ],
+  },
 });
